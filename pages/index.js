@@ -1,3 +1,4 @@
+import About from "components/about/about";
 import Layout from "components/MyLayout/MyLayout";
 import Head from "next/head";
 
@@ -12,9 +13,7 @@ export default function Home() {
 			</Head>
 
 			<Layout>
-				<div className="">
-					<h2 className="text-red-800">Body</h2>
-				</div>
+				<About />
 			</Layout>
 		</>
 	);

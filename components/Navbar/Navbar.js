@@ -17,9 +17,9 @@ export default function Header() {
 	};
 
 	return (
-		<div className="flex w-full md:h-20">
-			<div className="md:flex w-full h-full md:pl-5 pr-2 px-6 2xl:px-16 dark:!bg-slate-900 bg-white  text-black dark:!text-white items-center justify-between ">
-				<div className="w-1/3 h-full flex items-center max-[767px]:justify-between max-[767px]:w-full max-[767px]:py-6 ">
+		<div className="flex w-full md:h-32 items-center bg-gray-800">
+			<div className="md:flex w-full h-full md:pl-5 pr-2 px-6 2xl:px-16 dark:!bg-gray-800 bg-white  text-black dark:!text-white items-center justify-between ">
+				<div className="w-1/3 h-full flex items-center pl-5  max-[767px]:justify-between max-[767px]:w-full max-[767px]:py-6 ">
 					<Link href="/">
 						{/* <Image src={logo} width={90} height={50} /> */}
 						<span className="cursor-pointer min-[394px]:p-0  text-white min-[394px]:text-2xl  ">
@@ -34,8 +34,8 @@ export default function Header() {
 						/>
 					</span>
 				</div>
-				<div className="md:flex w-2/3 bg-black md:justify-between">
-					<ul className="md:flex md:gap-x-[3vw] gap-y-[100vh] md:gap-y-0 md:pl-20 font-semibold md:items-center  w-full md:w-auto md:py-0 py-4 md:p1-0 p1-7  transition-all ease-in duration-500 max-[767px]:hidden">
+				<div className="md:flex w-2/3 md:justify-between">
+					<ul className="md:flex md:gap-x-[3vw] gap-y-[100vh] text:md md:text-xl md:gap-y-0 md:pl-20  md:items-center  w-full md:w-auto md:py-0 py-4 md:p1-0 p1-7  transition-all ease-in duration-500 max-[767px]:hidden">
 						<Link href="/">
 							<li className="">Accueil</li>
 						</Link>
@@ -53,7 +53,7 @@ export default function Header() {
 						</Link>
 					</ul>
 				</div>
-				<FaSun size={20} className="max-[767px]:hidden " />
+				<FaSun size={20} className="max-[767px]:hidden mr-10 " />
 			</div>
 			<div
 				className={
@@ -83,16 +83,16 @@ export default function Header() {
 						<div className="py-1 flex flex-col items-center mt-6">
 							<ul className="uppercase font-semibold ">
 								<Link href="/">
-									<li className=" text-sm cursor-pointer py-4">Acueil</li>
+									<li className=" text-xl cursor-pointer py-4">Acueil</li>
 								</Link>
 								<Link href="/about">
-									<li className="text-sm cursor-pointer py-4 ">A propos</li>
+									<li className="text-xl cursor-pointer py-4 ">A propos</li>
 								</Link>
 								<Link href="/projects">
-									<li className=" text-sm cursor-pointer py-4">Projets</li>
+									<li className=" text-xl cursor-pointer py-4">Projets</li>
 								</Link>
 								<Link href="/contact">
-									<li className=" text-sm cursor-pointer py-4">Contact</li>
+									<li className=" text-xl cursor-pointer py-4">Contact</li>
 								</Link>
 							</ul>
 						</div>

@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 @layer base {
-	/* body {
-		@apply dark:bg-slate-800 text-black bg-white dark:text-black;
-	} */
+	 body {
+		@apply dark:bg-slate-800  dark:text-black;
+	} 
 	h1,
 	h2,
 	h3,
@@ -16,7 +16,7 @@
 	}
 
 	h1 {
-		@apply text-4xl sm:text-5xl md:text-6xl;
+		@apply text-4xl sm:text-5xl md:text-5xl;
 	}
 	h2 {
 		@apply text-3xl font-bold  mb-10;
@@ -33,5 +33,5 @@
 
 	* {
 		box-sizing: border-box;
-	}
-}
+		font-family: "Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"
+}}
