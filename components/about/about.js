@@ -14,7 +14,7 @@ import {
 export default function About() {
 	return (
 		<>
-			<div className="w-full h-3/5 flex bg-gray-800 my-16 py-5 text-white">
+			<div className="w-full h-3/5 flex bg-gray-800 my-16 py-5 text-white mb-40">
 				<div className="w-1/2 flex flex-col pl-40 pt-15 ">
 					<p className="my-5 text-2xl">
 						Bonjour,<span className="text-blue-500"> je suis</span>{" "}

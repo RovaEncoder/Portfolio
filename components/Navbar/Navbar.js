@@ -42,7 +42,7 @@ export default function Header() {
 						<Link href="About">
 							<li className="">About</li>
 						</Link>
-						<Link href="Skills">
+						<Link href="/#Languages&Outils">
 							<li className="">Skills</li>
 						</Link>
 						<Link href="Projects">

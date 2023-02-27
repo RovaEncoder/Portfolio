@@ -1,5 +1,6 @@
 import About from "components/about/about";
 import Layout from "components/MyLayout/MyLayout";
+import Skills from "components/skills/Skills";
 import Head from "next/head";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
 
 			<Layout>
 				<About />
+				<Skills />
 			</Layout>
 		</>
 	);
