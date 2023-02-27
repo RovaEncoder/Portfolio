@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import myphoto from "../../public/rova.png";
-import bgprofile from "../../public/bgprofile.png";
+
 import {
 	FaGithub,
 	FaLinkedin,
@@ -56,21 +56,16 @@ export default function About() {
 						</div>
 					</div>
 				</div>
-				<div className="w-1/3  flex flex-auto justify-center relativ">
-					<Image
-						className="rounded-md absolute z-30 rounded-bl-[100px] mb-20 "
-						src={myphoto}
-						width={330}
-						height={410}
-						alt="roro"
-					></Image>
-					<Image
-						className="rounded-md absolute z-10"
-						src={bgprofile}
-						width={490}
-						height={750}
-						alt="roro"
-					></Image>
+				<div className="w-1/2 flex justify-center items-center  ">
+					<div className="w-[410px] flex ml-3 items-center justify-center h-[310px] ">
+						<Image
+							className=" border-8 rounded-full border-blue-800"
+							src={myphoto}
+							width={350}
+							height={150}
+							alt="roro"
+						></Image>
+					</div>
 				</div>
 			</div>
 		</>
