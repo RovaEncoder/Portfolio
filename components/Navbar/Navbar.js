@@ -1,5 +1,7 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import { links } from "/data";
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import {
 	FaGithub,
 	FaLinkedin,
@@ -9,21 +11,46 @@ import {
 	FaMobileAlt,
 } from "react-icons/fa";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import roro from "/public/emy.png";
 
 export default function Header() {
 	const [navbar, setNavbar] = useState(false);
+	const [shadow, setShadow] = useState(false);
+
+	useEffect(() => {
+		const handleShadow = () => {
+			if (window.scrollY >= 30) {
+				setShadow(true);
+			} else {
+				setShadow(false);
+			}
+		};
+		window.addEventListener("scroll", handleShadow);
+	}, []);
+
 	const handleNav = () => {
 		setNavbar(!navbar);
 	};
 
 	return (
-		<div className="flex w-full md:h-32 items-center bg-gray-800">
-			<div className="md:flex w-full h-full md:pl-5 pr-2 px-6 2xl:px-16 dark:!bg-gray-800 bg-white  text-black dark:!text-white items-center justify-between ">
-				<div className="w-1/3 h-full flex items-center pl-5  max-[767px]:justify-between max-[767px]:w-full max-[767px]:py-6 ">
-					<Link href="/">
-						{/* <Image src={logo} width={90} height={50} /> */}
-						<span className="cursor-pointer min-[394px]:p-0  text-white min-[394px]:text-2xl  ">
-							Portfolio
+		<div
+			className={
+				shadow
+					? "flex fixed w-full shadow-xl z-[100] md:h-20 items-center bg-gray-800 "
+					: "fixed flex w-full md:h-20 items-center bg-gray-800 "
+			}
+		>
+			<div className="md:flex w-full h-full md:pl-5 pr-2 px-6  dark:!bg-gray-800  dark:!text-white items-center justify-center ">
+				<div className="w-1/3 flex items-center    pl-10  max-[767px]:justify-between max-[767px]:w-full max-[767px]:py-6 ">
+					<Link href="/#Home">
+						<span className="cursor-pointer min-[394px]:p-0  text-yellow-600 min-[394px]:text-2xl  ">
+							<Image
+								className=" "
+								src={roro}
+								width={80}
+								height={80}
+								alt="roro"
+							/>
 						</span>
 					</Link>
 					<span>
@@ -35,22 +62,14 @@ export default function Header() {
 					</span>
 				</div>
 				<div className="md:flex w-2/3 md:justify-between">
-					<ul className="md:flex md:gap-x-[3vw] gap-y-[100vh] text:md md:text-xl md:gap-y-0 md:pl-20  md:items-center  w-full md:w-auto md:py-0 py-4 md:p1-0 p1-7  transition-all ease-in duration-500 max-[767px]:hidden">
-						<Link href="/">
-							<li className="">Accueil</li>
-						</Link>
-						<Link href="About">
-							<li className="">About</li>
-						</Link>
-						<Link href="/#Languages&Outils">
-							<li className="">Skills</li>
-						</Link>
-						<Link href="Projects">
-							<li className="">Projects</li>
-						</Link>
-						<Link href="Conctact">
-							<li className="">Conctact</li>
-						</Link>
+					<ul className="md:flex md:gap-x-[3vw]  text:md md:text-xl md:gap-y-0 md:pl-20  md:items-center  w-full md:w-auto md:py-0 py-4 md:p1-0 p1-7  transition-all ease-in duration-500 max-[767px]:hidden">
+						{links.map(({ id, link }) => (
+							<li key={id} className="cursor-pointer">
+								<Link href={"/#" + link} smooth duration={200}>
+									{link}
+								</Link>
+							</li>
+						))}
 					</ul>
 				</div>
 				<FaSun size={20} className="max-[767px]:hidden mr-10 " />

@@ -1,70 +1,78 @@
 import Image from "next/image";
-import Link from "next/link";
-import myphoto from "../../public/rova.png";
+import console from "/public/console.png";
+import hat from "/public/graduation-hat.png";
+import dev from "/public/developpement-web.png";
+import essai from "/public/essai.png";
 
-import {
-	FaGithub,
-	FaLinkedin,
-	FaSun,
-	FaMoon,
-	FaAt,
-	FaMobileAlt,
-} from "react-icons/fa";
-
-export default function About() {
+export default function Home() {
 	return (
 		<>
-			<div className="w-full h-3/5 flex bg-gray-800 my-16 py-5 text-white mb-40">
-				<div className="w-1/2 flex flex-col pl-40 pt-15 ">
-					<p className="my-5 text-2xl">
-						Bonjour,<span className="text-blue-500"> je suis</span>{" "}
-					</p>
-					<h1 className="text-blue-500 my-3 ">Abessolo Christ Rova</h1>
-					<p className="w-full text-white md:text-xl my-5">
-						Etudiant à l’ECE-Paris, je suis à vos sevice et je suis très
-						passioné par le developpement web. Cela dit grace à vous je serai
-						capable de mettre en pratique toute mes compétence{" "}
-					</p>
-
-					<button className="bg-slate-900 text-white dark:bg-white hover:text-blue-500 dark:hover:text-white hover:bg-white  dark:hover:bg-blue-500  dark:text-black font-semibold  p-2 rounded-md flex items-center justify-center hover:scale-105 ease-in duration-300 cursor-pointer shadow-lg shadow-black-10  mb-3 w-[25%] mt-10">
-						<Link href="/">
-							<small>Me connaitre plus ...</small>
-						</Link>
-					</button>
-
-					<div className=" w-full flex items-center mt-7">
-						<p className="mr-10 text-xl">Entrer en contact:</p>
-						<div className=" rounded-full hover:rounded-xl   shadow-lg  p-2 cursor-pointer bg-blue-500 mr-3">
-							<Link href="https://www.linkedin.com/in/christ-rova-abessolo-903aa1244/">
-								<FaLinkedin size={15} className="transform -rotate-1" />
-							</Link>
-						</div>
-						<div className="rounded-full hover:rounded-xl  shadow-lg p-2 cursor-pointer  bg-blue-500 mr-3">
-							<Link href="abessolochrist30@gmail.com">
-								<FaAt size={15} />
-							</Link>
-						</div>
-						<div className="rounded-full  hover:rounded-xl   shadow-lg  p-2 cursor-pointer bg-blue-500 mr-3">
-							<Link href="https://github.com/RovaEncoder">
-								<FaGithub size={15} />
-							</Link>
-						</div>
-						<div className="rounded-full  hover:rounded-xl  shadow-lg  p-2 cursor-pointer bg-blue-500 mr-3">
-							<Link href="+33605549892">
-								<FaMobileAlt size={15} />
-							</Link>
-						</div>
+			<div
+				id="A propos"
+				className="w-full flex items-center justify-center pt-36 pb-10"
+			>
+				<div className="w-3/4 md:flex flex-col flex items-center  ">
+					<h2 className="uppercase text-white text-center">
+						<span className="text-blue-800">À</span> propos{" "}
+						<span className="text-blue-800">de moi:</span>{" "}
+					</h2>
+					<div className="flex items-start flex-col bg-slate-900 p-9 ">
+						<p className="text-yellow-600 font-semibold text-xl my-2 italic">
+							Je suis rigoureux, organisé, collaboratif et éfficace.
+						</p>
+						<p className=" rounded-xl  text-white whitespace-normal  items-center pr-20">
+							En tant qu'étudiant en école d'ingénieur, j'ai développé des
+							compétences techniques solides en programmation, en analyse de
+							données et en modélisation. De plus, j'ai travaillé sur de
+							nombreux projets en groupe, ce qui m'a permis d'améliorer mes
+							compétences en communication et de travailler efficacement avec
+							mes collègues pour atteindre nos objectifs communs.{" "}
+						</p>
 					</div>
-				</div>
-				<div className="w-1/2 flex justify-center items-center  ">
-					<div className="w-[410px] flex ml-3 items-center justify-center h-[310px] ">
-						<Image
-							className=" border-8 rounded-full border-blue-800"
-							src={myphoto}
-							width={350}
-							height={150}
-							alt="roro"
-						></Image>
+					<div className="w-full  flex gap-8 justify-center items-center text-white mt-24 group ">
+						<div className="flex w-1/4 h-full   p-10 py-5 first-line:justify-center shadow-lg flex-col group-hover:blur-sm hover:!blur-none items-center  bg-slate-900">
+							<Image className="" src={hat} width={85} height={85} alt="hat" />
+							<p className="text-center text-sm  mt-2 ">
+								ECE-PAris, école d'ingénieurs. Diplomé en 2024.
+							</p>
+						</div>
+						<div className=" w-1/4 h-full flex px-10 py-7 first-line:justify-center shadow-lg flex-col group-hover:blur-sm hover:!blur-none items-center bg-slate-900">
+							<Image
+								className="  "
+								src={dev}
+								width={85}
+								height={85}
+								alt="dev"
+							/>
+							<p className="text-center text-sm  mt-2">
+								Je suis passioné des nouvelles technoligies.
+							</p>
+						</div>
+						<div className=" w-1/4 h-full flex px-4 py-5 first-line:justify-center shadow-lg flex-col group-hover:blur-sm hover:!blur-none items-center bg-slate-900">
+							<Image
+								className=" "
+								src={essai}
+								width={85}
+								height={85}
+								alt="essai"
+							/>
+							<p className="text-center text-sm  mt-2">
+								Aucune connaissance n'est absolue ! Toujours entrain
+								d'apprendre.
+							</p>
+						</div>
+						<div className="w-1/4 h-full flex px-10 py-5 first-line:justify-center shadow-lg flex-col group-hover:blur-sm hover:!blur-none items-center  bg-slate-900">
+							<Image
+								className=" "
+								src={console}
+								width={85}
+								height={85}
+								alt="console"
+							/>
+							<p className="text-center text-sm mt-2">
+								J'aime les jeux vidéo - Chess, Fifa, Call of duty, etc.
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>

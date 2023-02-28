@@ -1,7 +1,8 @@
-import About from "components/about/about";
+import Accueil from "components/Accueil/Accueil";
+import About from "components/About/About";
 import Layout from "components/MyLayout/MyLayout";
-import Project from "components/Projets/Projects";
-import Skills from "components/skills/Skills";
+import Projets from "components/Projets/Projets";
+import Skills from "components/Skills/Skills";
 import Head from "next/head";
 
 export default function Home() {
@@ -15,9 +16,10 @@ export default function Home() {
 			</Head>
 
 			<Layout>
-				<About />
+				<Accueil />
 				<Skills />
-				<Project />
+				<Projets />
+				<About />
 			</Layout>
 		</>
 	);

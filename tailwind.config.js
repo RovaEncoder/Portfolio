@@ -6,7 +6,11 @@ module.exports = {
 		"./components/**/*.{js,ts,jsx,tsx}",
 	],
 	theme: {
-		extend: {},
+		extend: {
+			animation: {
+				bounce: "bounce 3s infinite",
+			},
+		},
 	},
 	plugins: [require("tailwindcss"), require("autoprefixer")],
 };
