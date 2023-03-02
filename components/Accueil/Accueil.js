@@ -24,7 +24,7 @@ export default function Home() {
 						Actuellement étudiant en Master 1 en école d’ingénieur dans la
 						spécialité systèmes d’information, je suis à vos services. En effet,
 						grace à vous je serai capable de mettre en pratique toute mes
-						compétences{" "}
+						compétences.{" "}
 					</p>
 					<Link href="/#A propos">
 						<button className="bg-blue-500 text-white  hover:text-blue-500 dark:hover:text-white hover:bg-white  dark:hover:bg-blue-500  dark:text-black font-semibold  px-6 py-2 rounded-md flex items-center justify-center hover:scale-105 ease-in duration-300 cursor-pointer shadow-lg shadow-black-10  mb-3  mt-10">
