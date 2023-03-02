@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { links } from "/data";
 import React, { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import {
 	FaGithub,
@@ -41,8 +42,8 @@ export default function Header() {
 			}
 		>
 			<div className="md:flex w-full h-full md:pl-5 pr-2 px-6  dark:!bg-gray-800  dark:!text-white items-center justify-center ">
-				<div className="w-1/3 flex items-center    pl-10  max-[767px]:justify-between max-[767px]:w-full max-[767px]:py-6 ">
-					<Link href="/#Home">
+				<div className="w-1/3 flex items-center pl-32  max-[767px]:justify-between max-[767px]:w-full max-[767px]:py-6 ">
+					<Link href="/#Accueil">
 						<span className="cursor-pointer min-[394px]:p-0  text-yellow-600 min-[394px]:text-2xl  ">
 							<Image
 								className=" "
@@ -61,10 +62,13 @@ export default function Header() {
 						/>
 					</span>
 				</div>
-				<div className="md:flex w-2/3 md:justify-between">
-					<ul className="md:flex md:gap-x-[3vw]  text:md md:text-xl md:gap-y-0 md:pl-20  md:items-center  w-full md:w-auto md:py-0 py-4 md:p1-0 p1-7  transition-all ease-in duration-500 max-[767px]:hidden">
+				<div className="flex w-2/3  justify-center">
+					<ul className="md:flex md:gap-x-[3vw]   md:text-2xl  md:pl-20  md:items-center  w-full md:w-auto md:py-0 py-4 md:p1-0 p1-7  transition-all ease-in duration-500 max-[767px]:hidden">
 						{links.map(({ id, link }) => (
-							<li key={id} className="cursor-pointer">
+							<li
+								key={id}
+								className="cursor-pointer hover:text-blue-500  focus:outline-none focus:ring-3  focus:ring-pink-300"
+							>
 								<Link href={"/#" + link} smooth duration={200}>
 									{link}
 								</Link>
@@ -72,7 +76,6 @@ export default function Header() {
 						))}
 					</ul>
 				</div>
-				<FaSun size={20} className="max-[767px]:hidden mr-10 " />
 			</div>
 			<div
 				className={

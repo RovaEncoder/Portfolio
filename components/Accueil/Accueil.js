@@ -26,12 +26,11 @@ export default function Home() {
 						grace à vous je serai capable de mettre en pratique toute mes
 						compétences{" "}
 					</p>
-
-					<button className="bg-slate-900 text-white dark:bg-white hover:text-blue-500 dark:hover:text-white hover:bg-white  dark:hover:bg-blue-500  dark:text-black font-semibold  p-2 rounded-md flex items-center justify-center hover:scale-105 ease-in duration-300 cursor-pointer shadow-lg shadow-black-10  mb-3 w-[25%] mt-10">
-						<Link href="/#A propos">
+					<Link href="/#A propos">
+						<button className="bg-blue-500 text-white  hover:text-blue-500 dark:hover:text-white hover:bg-white  dark:hover:bg-blue-500  dark:text-black font-semibold  px-6 py-2 rounded-md flex items-center justify-center hover:scale-105 ease-in duration-300 cursor-pointer shadow-lg shadow-black-10  mb-3  mt-10">
 							<small>Plus...</small>
-						</Link>
-					</button>
+						</button>
+					</Link>
 
 					<div className=" w-full flex items-center mt-7">
 						<p className="mr-10 text-xl">Entrer en contact:</p>
@@ -58,7 +57,7 @@ export default function Home() {
 					</div>
 				</div>
 				<div className="w-1/2 flex justify-center items-center  ">
-					<div className="w-[410px] flex ml-3 items-center justify-center animate-bounce  ">
+					<div className="w-[410px] flex ml-3 items-center justify-center animate-bounce duration-100  ">
 						<Image
 							className=" border-4 rounded-[100%] border-blue-800"
 							src={myphoto}
