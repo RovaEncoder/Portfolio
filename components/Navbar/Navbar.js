@@ -45,13 +45,7 @@ export default function Header() {
 				<div className="w-1/3 flex items-center pl-32  max-[767px]:justify-between max-[767px]:w-full max-[767px]:py-6 ">
 					<Link href="/#Accueil">
 						<span className="cursor-pointer min-[394px]:p-0  text-yellow-600 min-[394px]:text-2xl  ">
-							<Image
-								className=" "
-								src={roro}
-								width={80}
-								height={80}
-								alt="roro"
-							/>
+							<Image src={roro} width={80} height={80} alt="roro" />
 						</span>
 					</Link>
 					<span>
@@ -65,10 +59,7 @@ export default function Header() {
 				<div className="flex w-2/3  justify-center">
 					<ul className="md:flex md:gap-x-[3vw]   md:text-2xl  md:pl-20  md:items-center  w-full md:w-auto md:py-0 py-4 md:p1-0 p1-7  transition-all ease-in duration-500 max-[767px]:hidden">
 						{links.map(({ id, link }) => (
-							<li
-								key={id}
-								className="cursor-pointer hover:text-blue-500  focus:outline-none focus:ring-3  focus:ring-pink-300"
-							>
+							<li key={id} className="cursor-pointer hover:text-blue-500 ">
 								<Link href={"/#" + link} smooth duration={200}>
 									{link}
 								</Link>

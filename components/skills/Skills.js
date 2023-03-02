@@ -19,7 +19,6 @@ import {
 	SiKubernetes,
 } from "react-icons/si";
 import { GrHadoop } from "react-icons/gr";
-import { TbLetterC } from "react-icons/tb";
 
 export default function Skills() {
 	return (
