@@ -11,7 +11,7 @@ import {
 	FaMobileAlt,
 } from "react-icons/fa";
 
-export default function Home() {
+export default function Accueil() {
 	return (
 		<>
 			<div id="Accueil" className="w-full h-3/5 flex   text-white py-40">

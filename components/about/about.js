@@ -4,7 +4,7 @@ import hat from "/public/graduation-hat.png";
 import dev from "/public/developpement-web.png";
 import essai from "/public/essai.png";
 
-export default function Home() {
+export default function About() {
 	return (
 		<>
 			<div

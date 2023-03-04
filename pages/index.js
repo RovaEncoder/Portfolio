@@ -1,8 +1,8 @@
-import Accueil from "components/Accueil/Accueil";
-import About from "components/About/About";
-import Layout from "components/MyLayout/MyLayout";
-import Projets from "components/Projets/Projets";
-import Skills from "components/Skills/Skills";
+import Accueil from "../components/Accueil/Accueil";
+import About from "../components/About/About";
+import Layout from "../components/MyLayout/MyLayout";
+import Projets from "../components/Projets/Projets";
+import Skills from "../components/Skills/Skills";
 import Head from "next/head";
 
 export default function Home() {
