@@ -60,7 +60,7 @@ export default function Header() {
 					<ul className="md:flex md:gap-x-[3vw]   md:text-2xl  md:pl-20  md:items-center  w-full md:w-auto md:py-0 py-4 md:p1-0 p1-7  transition-all ease-in duration-500 max-[767px]:hidden">
 						{links.map(({ id, link }) => (
 							<li key={id} className="cursor-pointer hover:text-blue-500 ">
-								<Link href={"/#" + link} smooth duration={200}>
+								<Link href={"/#" + link} duration={200}>
 									{link}
 								</Link>
 							</li>
