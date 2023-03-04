@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import myphoto from "../../public/rova.png";
+import myphoto from "../public/rova.png";
 
 import {
 	FaGithub,
