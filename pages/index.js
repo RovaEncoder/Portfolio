@@ -1,5 +1,5 @@
 import Accueil from "../components/Accueil";
-import About from "../components/About";
+import About from "../components/about";
 import Layout from "../components/MyLayout";
 import Projets from "../components/Projets";
 import Skills from "../components/Skills";
@@ -17,9 +17,9 @@ export default function Home() {
 
 			<Layout>
 				<Accueil />
+				<About />
 				<Skills />
 				<Projets />
-				<About />
 			</Layout>
 		</>
 	);

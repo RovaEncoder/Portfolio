@@ -20,7 +20,7 @@ export default function About() {
 						<p className="text-yellow-600 font-semibold text-xl my-2 italic">
 							Je suis rigoureux, organisé, collaboratif et éfficace.
 						</p>
-						<p className=" rounded-xl  text-white whitespace-normal  items-center pr-20">
+						<p className="text-white whitespace-normal  items-center pr-20">
 							En tant qu'étudiant en école d'ingénieur, j'ai développé des
 							compétences techniques solides en programmation, en analyse de
 							données et en modélisation. De plus, j'ai travaillé sur de
