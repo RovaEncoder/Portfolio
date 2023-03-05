@@ -1,5 +1,5 @@
 import Accueil from "../components/Accueil";
-import About from "../components/about";
+import About from "../components/About";
 import Layout from "../components/MyLayout";
 import Projets from "../components/Projets";
 import Skills from "../components/Skills";
