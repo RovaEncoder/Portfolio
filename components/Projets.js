@@ -26,7 +26,7 @@ export default function Projets() {
 						</div>
 					</div>
 					<div className="w-2/3  h-full flex items-center justify-center p-3">
-						<Link href="https://ece-wepapp-abessolo-affadjene.vercel.app/">
+						<Link href="https://school-project-blog-rova.vercel.app/">
 							<Image
 								className="rounded-xl border border-white/50 shadow-xl shadow-white/20 hover:scale-105 ease-in duration-300 cursor-pointer "
 								src={projet1}
