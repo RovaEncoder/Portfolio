@@ -4,9 +4,9 @@ import Footer from "./Footer";
 
 export default function Layout({ children }) {
 	return (
-		<div className="min-h-[100vh] flex flex-col bg-gray-800">
+		<div className="min-h-[100vh] min-w-[100vw] flex flex-col bg-gray-800 overflow-clip">
 			<Navbar />
-			<div className="flex-auto">{children}</div>
+			<div>{children}</div>
 			<Footer />
 		</div>
 	);

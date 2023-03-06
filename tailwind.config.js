@@ -12,6 +12,9 @@ module.exports = {
 				bounce: "bounce 5s infinite",
 			},
 		},
+		fontFamily: {
+			signature: ["Great Vibes"],
+		},
 	},
 	plugins: [require("tailwindcss"), require("autoprefixer")],
 };

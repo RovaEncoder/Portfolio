@@ -30,7 +30,7 @@ export default function Skills() {
 				<p className="text-3xl font-semibold mb-10 text-white">
 					Langages & Outils
 				</p>
-				<div className="grid gap-x-20 gap-y-4 grid-cols-3   w-[80%] p-2">
+				<div className="grid md:gap-x-20 gap-x-5 md:gap-y-4 gap-y-8 grid-cols-3   w-[80%] p-2">
 					<div className="bg-white p-3 flex flex-col justify-center  items-center text-orange-500 shadow-md shadow-orange-500 hover:opacity-100 rounded-md hover:scale-105 ease-in duration-150">
 						<p>HML</p>
 						<FaHtml5 size={35} />
