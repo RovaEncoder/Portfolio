@@ -53,7 +53,7 @@ export default function Accueil() {
 							</a>
 						</div>
 						<div className="rounded-full  hover:bg-yellow-600   shadow-md shadow-white   p-2 cursor-pointer bg-blue-500 mr-3 hover:scale-105 ease-in duration-300">
-							<a href="+33605549892">
+							<a href="tel:+33605549892">
 								<FaMobileAlt size={25} />
 							</a>
 						</div>

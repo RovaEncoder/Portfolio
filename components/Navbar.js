@@ -152,7 +152,7 @@ export default function Header() {
 								</a>
 							</div>
 							<div className="rounded-full shadow-lg shadow-white/20 p-3 cursor-pointer  bg-blue-500">
-								<a href="+33605549892">
+								<a href="tel:+33605549892">
 									<FaMobileAlt size={20} />
 								</a>
 							</div>
