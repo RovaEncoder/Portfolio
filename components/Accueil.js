@@ -8,7 +8,7 @@ export default function Accueil() {
 	return (
 		<div
 			id="Accueil"
-			className="w-full h-full md:flex text-white py-40 max-[767px]:flex-col  "
+			className="w-full h-full md:flex text-white pt-40 max-[767px]:flex-col   "
 		>
 			<div className="md:w-1/2 w-full flex flex-col md:pl-40 max-[767px]:pl-0 max-[767px]:items-center md:pt-15 pt-0  ">
 				<p className="my-5 text-2xl max-[767px]:text-md">

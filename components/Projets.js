@@ -8,7 +8,7 @@ export default function Projets() {
 		<>
 			<div
 				id="Projets"
-				className="w-full  px-3 md:flex flex-col items-center justify-center md:mt-40 max-[767px]:py-40 "
+				className="w-full  px-3 md:flex flex-col items-center justify-center md:pt-40 max-[767px]:py-40 "
 			>
 				<h2 className="text-white max-[767px]:text-center">Projets récents</h2>
 				<div className="flex flex-col  w-full  gap-y-8  items-center justify-center  max-[767px]:grid-rows-2  ">

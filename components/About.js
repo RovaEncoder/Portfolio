@@ -9,7 +9,7 @@ export default function About() {
 		<>
 			<div
 				id="A propos"
-				className="w-full flex items-center justify-center md:pt-36 max-[767px]:px-4"
+				className="w-full flex items-center justify-center  max-[767px]:px-4 pt-36"
 			>
 				<div className="md:w-3/4 w-full md:flex flex-col flex items-center  ">
 					<h2 className="uppercase text-white text-center">

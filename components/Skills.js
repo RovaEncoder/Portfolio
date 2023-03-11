@@ -25,7 +25,7 @@ export default function Skills() {
 		<>
 			<div
 				id="Skills"
-				className="my-100 w-full h-full flex items-center justify-center flex-col  pt-40 pb-10"
+				className="my-100 w-full h-full flex items-center justify-center flex-col  pt-40 pb-5 "
 			>
 				<p className="text-3xl font-semibold mb-10 text-white">
 					Langages & Outils
