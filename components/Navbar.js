@@ -37,12 +37,12 @@ export default function Header() {
 		<div
 			className={
 				shadow
-					? "flex fixed w-full shadow-xl z-[100] md:h-20 items-center bg-gray-800 max-[767px]:p-2"
-					: "fixed flex w-full md:h-20 items-center bg-gray-800 "
+					? "flex fixed w-full shadow-xl z-[100] h-14 md:h-20 items-center bg-gray-800 "
+					: "fixed flex w-full h-14 md:h-20 items-center bg-gray-800 "
 			}
 		>
-			<div className="md:flex w-full h-full md:pl-5 max-[767px]:p-2  md:px-6  dark:!bg-gray-800  dark:!text-white items-center md:justify-center ">
-				<div className="w-1/3 flex items-center pl-32 max-[767px]:p-0  max-[767px]:justify-between max-[767px]:w-full max-[767px]:py-6 ">
+			<div className="md:flex w-full h-full md:pl-5 max-[767px]:p-2  md:px-6  dark:!bg-gray-800  dark:!text-white items-center md:justify-center  ">
+				<div className="w-1/3 flex items-center pl-32 max-[767px]:p-0  max-[767px]:justify-between max-[767px]:w-full  ">
 					<Link to="/#Accueil">
 						<span className="cursor-pointer min-[394px]:p-0  min-[394px]:text-2xl  ">
 							<Image src={roro} width={80} height={80} alt="roro" />
