@@ -55,20 +55,16 @@ export default function Skills() {
             <FaNodeJs size={35} />
           </div>
           <div className="bg-white p-3 text-red-600 flex flex-col justify-center items-center  hover:opacity-100 rounded-md  hover:scale-105 ease-in duration-150">
-            <p>NextJs</p>
+            <p>NestJs</p>
             <SiNestjs size={35} />
           </div>
           <div className="bg-white p-3 text-black flex flex-col justify-center items-center  hover:opacity-100 rounded-md  hover:scale-105 ease-in duration-150">
             <p>Python</p>
             <FaPython size={35} />
           </div>
-          <div className="bg-white p-3 flex flex-col justify-center items-center text-red-600  shadow-md shadow-red-600 hover:opacity-100 rounded-md  hover:scale-105 ease-in duration-150">
-            <p>Scala</p>
-            <SiScala size={35} />
-          </div>
-          <div className="bg-white p-3 flex flex-col justify-center items-center text-yellow-800 shadow-md shadow-yellow-800  hover:opacity-100 rounded-md  hover:scale-105 ease-in duration-150">
-            <p>Hadoop</p>
-            <GrHadoop size={35} />
+          <div className="bg-white p-3 flex flex-col justify-center items-center text-black shadow-md shadow-black hover:opacity-100 rounded-md  hover:scale-105 ease-in duration-150">
+            <p>React Native</p>
+            <FaReact size={35} />
           </div>
           <div className="bg-white p-3 flex flex-col justify-center items-center text-orange-600 shadow-md shadow-orange-600 hover:opacity-100 rounded-md  hover:scale-105 ease-in duration-150">
             <p>Git</p>
@@ -85,10 +81,6 @@ export default function Skills() {
           <div className="bg-white p-3 flex flex-col justify-center items-center text-blue-600 shadow-md shadow-blue-600  hover:opacity-100 rounded-md hover:scale-105 ease-in duration-150">
             <p>Docker</p>
             <SiDocker size={35} />
-          </div>
-          <div className="bg-white p-3 flex flex-col justify-center items-center text-blue-600 shadow-md shadow-blue-600    hover:opacity-100 rounded-md hover:scale-105 ease-in duration-150">
-            <p>Kubernetes</p>
-            <SiKubernetes size={35} />
           </div>
         </div>
       </div>
